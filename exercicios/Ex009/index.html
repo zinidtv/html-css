@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+        <h2>Listas ordenadas</h2> <!--A ordem na lista faz diferença-->
+            <ol type="A"> <!--Tag ol para criar uma lista ordenada--> <!--Tag type para formatar o marcador do item-->
+                <li>item 1</li><!--Tag li para adicionar um item na lista-->
+                <li>item 5</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+            </ol>
+        <h2>Listas não ordenadas</h2> <!--A ordem da lista não faz diferença-->
+            <ul type="circle"> <!--Tag ul para criar uma lista não ordenada--> <!--disc circle square-->
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+            </ul>
+        <h2>Fazendo sublistas contínuas</h2>
+            <ol>
+                <li>item 1</li>
+                    <ol type="A">
+                        <li>item a</li>
+                        <li>item b</li>
+                        <li>item c</li>
+                    </ol>
+                <li>item 2</li>
+                    <ol type="A" start="4">
+                        <li>item a</li>
+                        <li>item b</li>
+                        <li>item c</li>
+                    </ol>
+            </ol>
+        <h2>Mesclando ol e ul</h2>
+            <ol>
+                <li>item 1</li>
+                    <ul>
+                        <li>item a</li>
+                        <li>item b</li>
+                        <li>item c</li>
+                    </ul>
+            </ol>
+        <h2>Lista de definições</h2>
+            <dl> <!--Tag dl usada para criar lista onde os itens tem definições-->
+                <dt>item 1</dt> <!--Tag dt para especificar o termo-->
+                <dd>este é o primeiro item da lista</dd> <!--Tag dd para especificar a definição-->
+            </dl>
+</body>
+</html>

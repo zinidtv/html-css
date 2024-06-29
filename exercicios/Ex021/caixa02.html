@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Ex010/favicon.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: dimgray;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;            
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.356);
+        }
+
+        nav {
+            background-color: rgb(92, 141 ,172);
+            padding: 3px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.356);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 50px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;            
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.356);
+        }
+
+        article {
+            background-color: lightskyblue;
+            padding: 5px;            
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.356);
+        }
+
+        article > aside {
+            background-color: rgb(92, 141, 172);
+            width: max-content;
+        }
+
+        aside > p { /*Parágrafo dentro do aside*/
+            text-align: right;
+            font-weight: bold;
+            color: white;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header> <!--Tag do cabeçalho-->
+        <h1>Título do Site</h1>
+        <nav> <!--Tag do menu do site-->
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main> <!--Tag do conteúdo principal-->
+        <section id="principal"> <!--Tag usada para sub-dividir o conteúdo principal-->
+
+        </section>
+        <section id="clientes">
+            <article> <!--Tag para definir os artigos da section-->
+                <h2>Testando</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, ipsum at eaque sint molestiae quam illo nemo dolor tempora! Nisi, aspernatur dolores reiciendis velit ipsum enim ea eligendi eius iste?</p>
+                    <aside> <!--Tag para definir algo periférico ao artigo-->
+                        <p>Testado por ziniD.</p>
+                    </aside>
+            </article>
+        </section>
+    </main>
+    <footer> <!--Tag do rodapé-->
+        <p>Aprendeo sobre criação de site!</p>
+    </footer>
+</body>
+</html>

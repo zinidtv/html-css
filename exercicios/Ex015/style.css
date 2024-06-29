@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(58, 58, 204);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    color: brown;
+    background-color: aqua;
+}
+h2 {
+    color: aqua;
+    background-color: brown;
+}
+p {
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+}

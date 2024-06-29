@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/*
+HTML é id = CSS é # (usar apenas em um elemente por documento)
+HTML é class = CSS é . (posso ter vários no mesmo documento)
+*/
+
+body {
+    background-color: #6ed1ff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: #32657C;
+}
+
+#principal { 
+    background-color: #32657C;
+    color: #6ed1ff;
+    text-align: center;
+}
+
+h2 {
+    color: brown;
+}
+
+.basico {
+    color: #5EBEEB;
+}
+
+.intermediario {
+    color: #4D9CC0;
+}
+
+.avancado {
+    color: #3F809E;
+}
+
+p {
+    text-align: justify;
+}
+
+.destaque {
+    background-color: #bae00f4f;
+}

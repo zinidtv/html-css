@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Ex010/favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+        <p>Para alteração dinâmica da imagem baseado no dispositivo ou tamanho da janela utilizado.</p>
+        <picture> <!--Para uma mesma imagem com tamanhos diferentes-->
+            <!--Precisa ser em ordem crescente ou descrescente, se estiver fora de ordem, não funcionará-->
+            <source media="(max-width: 750px)" srcset="Imagens/ImgP.png" type="image/png"> <!--Tag que chama a img pequena-->
+            <source media="(max-width: 1050px)" srcset="Imagens/ImgM.png" type="image/png"> <!--Tag que chama a img média-->
+            <img src="Imagens/ImgG.png" alt="Tamanho Flexível">
+        </picture>
+    <h1>Colocando áudio</h1>
+        <p>Para ter reprodução de áudio no site</p>
+        <audio src="Midias/audio.mp3" controls></audio> <!--Forma mais simples/genérica-->
+        <audio preload="metadata" controls loop> <!--Forma mais avançada-->
+            <source src="Midias/audio.mp3" type="audio/mpeg">
+        </audio>
+</body>
+</html>

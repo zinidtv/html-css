@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo Fixo de Tela</title>
+    <style>
+        body {
+            height: 100vh;
+            /*background-color: black;
+            background-image: url("imagens/wallpaper002.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;*/ /*usado para fixar o fundo e deixar que outros elementos rolem na página*/
+
+            /*Shorthand - background
+            color > image > position > repeat > [size] > attachment
+            o "size" ainda não funciona na shorthand
+            */
+
+            background: black url("imagens/wallpaper002.jpg") center center no-repeat fixed;
+            background-size: cover;
+        }
+
+        main {
+            background-color: lightblue;
+            max-width: 800px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem de Fundo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ex enim atque accusantium iure. A unde quas molestiae eum eius sunt sapiente, tempora numquam facere similique aliquam debitis placeat fugit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse reprehenderit vero iure rerum! Facere perferendis porro suscipit omnis id hic! Accusamus ad ex, hic exercitationem quasi corrupti fuga voluptas laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus beatae eius earum sunt excepturi neque architecto maxime, praesentium rem, mollitia laudantium animi molestias omnis iste. Id impedit magnam recusandae at.</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Formulários</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+    <!--Deixar o autocomplete no form sempre ligado, e nos inputs discriminar o que é cada campo-->
+        <p>
+            <label for="iusuario">Usuário: </label>
+            <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="10" size="12" placeholder="nome de usuário" autocomplete="username">
+            <!--Tag required torna obrigatório o preenchimento do campo-->
+            <!--Tags minlength/maslength definem o mínimo/máximo de caracteres para o campo onde forem usadas-->
+        </p>
+        <p>
+            <label for="isenha">Senha: </label>
+            <input type="password" name="senha" id="isenha" required minlength="6" maxlength="10" size="12" placeholder="mín. 6 caracteres" autocapitalize="newpassword">
+            <!--Usar type=password para campos onde os dados devem ser ocultos na digitação-->
+            <!--Tag placeholder para adicionar "dicas" para o preenchimento do campo-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Formulários</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!--autocomplete para desligar o autocomplete-->
+        <!--As labels servem para relacionar o nome do campo, com o campo-->
+        <!--Existem dois métodos de envio para html: get e post-->
+        <!--Método get serve para dados/arquivos menos sensíveis || pode enviar no máximo 3000 bytes/caracteres-->
+        <!--Método post serve para dados/arquivos mais sensíveis || não serve como proteção/criptografia de dados-->
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="Sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>

@@ -8,8 +8,20 @@
 <body>
     <h1>Exemplos de formulários</h1>
 
-    <form action="cadastro.php" method="get" autocomplete="on">
-        
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="Cor" id="icor">
+        </p>
+        <p>
+            <label for="inivel">Nivel de satisfação:</label>
+            <input type="range" name="Nivel" id="inivel" min="1" max="5">
+        </p>
+        <p>
+            <label for="ifoto">Foto de perfil:</label>
+            <input type="file" name="Foto" id="ifoto">
+            <!--Para envio de fotos, usar método post-->
+        </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">

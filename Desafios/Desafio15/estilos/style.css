@@ -19,11 +19,7 @@ body {
 }
 
 main {
-    /*position: relative;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    position: relative;
     height: 100vh;
 }
 
@@ -42,6 +38,23 @@ main {
     position: relative;
     top: 80px;
     left: 21px;
-    width: 269px;
+    width: 268px;
     height: 472px;
+}
+
+#sociais {
+    text-align: right;
+}
+#sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.515);
+    box-sizing: border-box;
+}
+#sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10x rgba(0, 0, 0, 0.715);
+    transition: transform 0.4s, border 0.1s;
 }

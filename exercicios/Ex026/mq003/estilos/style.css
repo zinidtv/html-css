@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*Eu também posso fazer todas as declarações de mídia num único arquivo de css*/
+/*Recomendado apenas para projetos pequenos, em projetos grandes, usar a maneira onde fica tudo separado*/
+
+/*Declarações para retrato*/
+@media screen and (orientation: portrait) { /*Basta eu configurar cada mídia dessa maneira*/
+    body {
+        background: url(../imagens/cev-portrait.jpg);
+        background-position: center bottom;
+    }
+}
+
+/*Declarações para paisagem*/
+@media screen and (orientation: landscape) {
+    body {
+        background: url(../imagens/cev-landscape.jpg);
+        background-position: center bottom;
+    }
+}
+
+/*Declarações Gerais*/
+@media all {
+    * {
+        padding: 0px;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html, body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #233eff;
+        /*background-size: cover;*/ /*Com o cover, a imagem fica atrás de tudo, inclusive do h1*/
+        background-size: cover; /*Com o contain, a imgagem fica onde posicionarmos, e o h1 não fica por cima*/
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.315);
+        padding: 10px;
+    }
+}

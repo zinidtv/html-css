@@ -21,11 +21,11 @@ header > h1 {
 
 menu ul {
     list-style-type: none;
-    background-color: lightcoral;
+    background-color: rgb(214, 72, 72);
     text-align: center;
 }
 menu li {
-    background-color: rgb(214, 72, 72);
+    background-color: lightcoral;
     color: aliceblue;
     padding: 5px;
     display: inline-block;

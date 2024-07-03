@@ -15,10 +15,6 @@ Grandes telas: acime de 1200px
         font-family: 'Courier New', Courier, monospace;
     }
 
-    body {
-        /*background-image: url(../imagens/back-print.jpg); não fazer dessa maneira, não imprime BG*/
-    }
-
     main {
         width: 90vw;
         border: 2px solid black;

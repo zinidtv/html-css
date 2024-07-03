@@ -29,7 +29,6 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: white;
     width: 250px;
@@ -38,6 +37,7 @@ section#login {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
     transition: width .5s, height .5s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 section#login > div#imagem {
     display: block;
@@ -55,6 +55,7 @@ section#login > div#formulario {
 div#formulario > h1 {
     text-align: center;
     margin-bottom: 10px;
+    color: #5f2c82;
 }
 
 div#formulario > p {
@@ -63,14 +64,34 @@ div#formulario > p {
 
 form > div.campo {
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 div.campo > label {
     display: none;
+}
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input {
+    background-color: #69e7e3;
+    font-size: 1em;
+    width: calc(100% - 44.4px);
+    height: 100%;
+    border: 0px;
+    border-radius: 6px;
+    padding: 4px;
+    transform: translateY(-12px); /*Sempre colocar o transform depois de tudo*/
+}
+div.campo > input:focus-within {
+    background-color: white;
 }
 
 form > input[type=submit] {
@@ -81,7 +102,7 @@ form > input[type=submit] {
     background-color: #49a09d;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
 }
 form > input[type=submit]:hover {
@@ -97,7 +118,7 @@ form > a.botao {
     height: 40px;
     background-color: white;
     border: 1px solid #49a09d;
-    border-radius: 5px;
+    border-radius: 8px;
     text-decoration: none;
     color: #2f615f;
     padding-top: 7px;
@@ -110,8 +131,3 @@ form > a.botao:hover {
 form > a.botao > span {
     font-size: .8em;
 }
-
-span.size-20 {
-    font-size: 20px;
-    font-variation-settings: 'OPSZ' 20;
-  }

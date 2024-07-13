@@ -1,0 +1,18 @@
+-> justify-content
+    - alinhamento em relação ao main-axis, tanto para linha quanto para coluna
+        - justify-content: start; alinha baseado no inínio do main-start
+        - justify-content: center; alinha baseado no centro do main-start
+        - justify-content: end; alinha baseado no fim do main-start
+        - justify-content: space-between; distribuiçao com espaço uniforme a partir do main-start e main-end
+        - justify-content: space-evenly; distribuição com espaço unifome entre os itens
+            - neste caso, não há espaço entre os itens e start/end
+        - justify-content: space-around; divide o pai por três, e centraliza os filhos no espaço criado
+            - neste caso, o espaço entre o start/end é a metade do espaço entre os itens
+
+-> align-items
+    - alinhamento em relação ao cross-axis, tanto para linha quanto para coluna
+        - align-items: stretch; esse é o valor padrão que estica o tamanho dos itens a depender da sua orientação
+        - align-items: flex-start; alinha baseado no início do cross-start
+        - align-items: center; alinha baseado no centro do cross-start
+
+ESSAS CONFIGURAÇÕES DEVEM SER ADICIONADAS NO PAI

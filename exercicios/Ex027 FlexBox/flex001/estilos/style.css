@@ -1,0 +1,18 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.container {
+    display: flex;
+    background-color: lightcoral;
+}
+.item {
+    flex: auto;
+    background-color: lightsalmon;
+    border: .5px solid black;
+}

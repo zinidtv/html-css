@@ -1,0 +1,35 @@
+Configurações padrões do Flex-direction:
+
+-> ROW:
+    auto: da esquerda para direita
+    row-reverse: da direita para esquerda
+
+-> COLUMN:
+    auto: de cima apra baixo
+    collumn-reverse: de baixo para cima
+
+Eixos:
+    Se é flex-direction: row:
+        - o primeiro eixo criado é o "main-axis" na horizontal (eixo principal)
+            - este cria dois pontos: main-start e main-end
+        - outro eixo criado é o "cross-axis" na vertical (eixo transversal)
+            - este também cria dois pontos: cross-start e cross-end
+    Se é flex-direction: row-reverse:
+        - Mesma configuração considerando a inversão do "reverse"
+            - cria os mesmo dois pontos considerando a inversão do "reverse"
+        - Mesma configuração do auto, a partir do "main-start"
+            - mesma configuração do auto, a partir do "main-start"
+
+    Se é flex-direction: column:
+        - o main-axis se torna um eixo vertical iniciando de baixo para cima
+            - criando os mesmos: main-start e main-end
+        - o cross-axis se torna um eixo horizontal iniciando da esquerda para a direita
+            - criando os mesmos: cross-start e cross-end
+    Se é flex-direction: column-reverse:
+        - Mesma configuração considerando a inversão do "reverse"
+            - cria os mesmo dois pontos considerando a inversão do "reverse"
+        - Mesma configuração do auto, a partir do "main-start"
+            - Mesma configuração do auto, a partir do "main-start"
+
+    O main-start e cross-start partem sempre do mesmo ponto
+![alt text](image.png)

@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.container {
+    background-color: lightcoral;
+
+    display: flex;
+    flex-direction: row;
+}
+.item {
+    background-color: lightsalmon;
+    border: .5px solid black;
+    text-align: center;
+    padding: 10px;
+}

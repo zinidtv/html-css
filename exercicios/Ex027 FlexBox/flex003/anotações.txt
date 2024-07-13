@@ -1,0 +1,18 @@
+Anotações gerais
+    - o encolhimento/tamanho das box dependem do conteúdo que está dentro delas;
+    - o atributo "flex: auto" só funciona no filho, não funciona no pai
+    - quando usamos wrap no pai e flex: auto no filho, a quebra acontece de acordo com o tamanho do conteúdo da box
+
+-> flex-wrap
+    - o valor padrão da configuração é "flex-wrap: nowrap"
+        - neste caso não haverá quebra de linha no conteúdo
+    - o valor configurado como "flex-wrap: wrap"
+        - neste caso ele fará a quebra da linha no sentido do eixo cross-axis, com leitura da direita para a esquerda ou de cima para baixo
+    - o valor configurado como "flex-wrap: wrap-reverse"
+        - neste caso ele fará a quebra da linha no sentido oposto do eixo cross-axis
+
+Digamos que tenhamos a seguinte configuração para uma class:
+    flex-direction: row;
+    flex-wrap: nowrap;
+Podemos usar uma shorthand para simplificar o código, exemplo abaixo:
+    flex-flow: row nowrap;

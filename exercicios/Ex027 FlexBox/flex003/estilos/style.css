@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.container {
+    background-color: lightcoral;
+    width: 150px;
+    margin: auto;
+
+    display: flex;
+    /*flex-direction: row;
+    flex-wrap: wrap-reverse;*/
+    /*Usando shorthand para simplicar o código usando o flex-flow*/
+    flex-flow: row wrap-reverse;
+}
+.item {
+    background-color: lightsalmon;
+    border: .5px solid black;
+    text-align: center;
+    padding: 10px;
+    flex: auto;
+}

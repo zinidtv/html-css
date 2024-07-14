@@ -14,5 +14,6 @@
         - align-items: stretch; esse é o valor padrão que estica o tamanho dos itens a depender da sua orientação
         - align-items: flex-start; alinha baseado no início do cross-start
         - align-items: center; alinha baseado no centro do cross-start
+        - align-items: flex-end; alinha baseado no fim do cross-start
 
 ESSAS CONFIGURAÇÕES DEVEM SER ADICIONADAS NO PAI
